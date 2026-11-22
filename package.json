@@ -1,0 +1,28 @@
+{
+  "name": "env-validator",
+  "version": "1.0.0",
+  "description": "Validate environment variables before your server starts.",
+  "main": "./src/index.cjs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.cjs"
+    }
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": ["environment", "env", "validation", "config"],
+  "author": "yash-boora (https://github.com/yash-boora)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yash-boora/env-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yash-boora/env-validator/issues"
+  },
+  "homepage": "https://github.com/yash-boora/env-validator#readme"
+}
