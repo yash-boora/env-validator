@@ -1,18 +1,18 @@
 # env-validator
 
-[![npm version](https://img.shields.io/npm/v/env-validator.svg)](https://www.npmjs.com/package/env-validator)
-[![npm downloads](https://img.shields.io/npm/dm/env-validator.svg)](https://www.npmjs.com/package/env-validator)
+[![npm version](https://img.shields.io/npm/v/%40yash-boora%2Fenv-validator.svg)](https://www.npmjs.com/package/%40yash-boora%2Fenv-validator)
+[![npm downloads](https://img.shields.io/npm/dm/%40yash-boora%2Fenv-validator.svg)](https://www.npmjs.com/package/%40yash-boora%2Fenv-validator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
 
-Validate environment variables before your server starts. `env-validator` has no runtime dependencies and supports both CommonJS and ES modules.
+Validate environment variables before your server starts. `@yash-boora/env-validator` has no runtime dependencies and supports both CommonJS and ES modules.
 
 Repository: [github.com/yash-boora/env-validator](https://github.com/yash-boora/env-validator)
 
 ## Install
 
 ```sh
-npm install env-validator
+npm install @yash-boora/env-validator
 ```
 
 Requires Node.js 18 or newer.
@@ -20,7 +20,7 @@ Requires Node.js 18 or newer.
 ## Quick start
 
 ```js
-const { validateEnv } = require('env-validator');
+const { validateEnv } = require('@yash-boora/env-validator');
 
 const config = validateEnv({
   PORT: { type: 'number', required: true },
@@ -40,13 +40,13 @@ Validation returns a new object containing values that were present or received 
 CommonJS:
 
 ```js
-const { validateEnv } = require('env-validator');
+const { validateEnv } = require('@yash-boora/env-validator');
 ```
 
 ES modules:
 
 ```js
-import { validateEnv } from 'env-validator';
+import { validateEnv } from '@yash-boora/env-validator';
 ```
 
 Both forms are provided through the package `exports` map.
